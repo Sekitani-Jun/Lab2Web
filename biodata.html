@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Biodata Mahasiswa</title>
+  </head>
+  <body>
+    <header>
+      <h1>Biodata Mahasiswa</h1>
+    </header>
+
+    <nav>
+      <a href="index.html">Beranda</a> |
+      <a href="biodata.html">Biodata</a>
+    </nav>
+
+    <main>
+      <section id="biodata">
+        <h2>Tabel Biodata</h2>
+        <table border="1">
+          <thead>
+            <tr>
+              <th>Data</th>
+              <th>Keterangan</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>NIM</td>
+              <td>3125***</td>
+            </tr>
+            <tr>
+              <td>Nama</td>
+              <td>Jumari</td>
+            </tr>
+            <tr>
+              <td>Program Studi</td>
+              <td>Teknik Informatika</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <hr />
+
+      <section id="form">
+        <h2>Form Biodata</h2>
+        <form>
+          <label for="nama">Nama:</label>
+          <input type="text" id="nama" name="nama" required /><br /><br />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required /><br /><br />
+
+          <!-- Penggunaan Radio Button -->
+          <label>Jenis Kelamin:</label><br />
+          <input type="radio" id="pria" name="gender" value="Pria" required />
+          <label for="pria">Pria</label>
+          <input
+            type="radio"
+            id="wanita"
+            name="gender"
+            value="Wanita"
+            required
+          />
+          <label for="wanita">Wanita</label>
+          <input type="radio" id="waria" name="gender" value="Waria" required />
+          <label for="waria">Waria</label> <br /><br />
+
+          <!-- Penggunaan Checkbox -->
+          <label>Keahlian:</label><br />
+          <input type="checkbox" id="python" name="keahlian" value="Python" />
+          <label for="python">Python</label>
+          <input
+            type="checkbox"
+            id="javascript"
+            name="keahlian"
+            value="JavaScript"
+          />
+          <label for="javascript">JavaScript</label>
+          <input type="checkbox" id="php" name="keahlian" value="PHP" />
+          <label for="php">king PHP</label>
+          <input type="checkbox" id="yapping" name="keahlian" value="Yapping" />
+          <label for="yapping">Yapping</label> <br /><br />
+
+          <!-- Select -->
+          <label for="prodi">Program Studi:</label>
+          <select id="prodi" name="prodi" required>
+            <option value="">--Pilih--</option>
+            <option value="ti">Teknik Informatika</option>
+            <option value="si">Sistem Informasi</option>
+          </select>
+          <br /><br />
+
+          <!-- Textarea -->
+          <label for="alamat">Alamat:</label><br />
+          <textarea id="alamat" name="alamat" required></textarea>
+          <br /><br />
+
+          <button type="submit">Simpan</button>
+          <button type="reset">Reset</button>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
