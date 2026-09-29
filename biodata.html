@@ -42,16 +42,35 @@
         </table>
       </section>
 
+      <!-- Membuat Garis Pemisah Horizontal -->
       <hr />
 
       <section id="form">
         <h2>Form Biodata</h2>
         <form>
+          <label for="Nim">NIM:</label>
+          <input
+            type="text"
+            id="Nim"
+            name="Nim"
+            pattern="[0-9]+"
+            tittle="Nim hanya boleh diisi angka"
+            required
+          /><br /><br />
+
           <label for="nama">Nama:</label>
-          <input type="text" id="nama" name="nama" required /><br /><br />
+          <input
+            type="text"
+            id="nama"
+            name="nama"
+            minlength="2"
+            maxlength="50"
+            required
+          /><br /><br />
 
           <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required /><br /><br />
+          <input type="email" id="email" name="email" required />
+          <br /><br />
 
           <!-- Penggunaan Radio Button -->
           <label>Jenis Kelamin:</label><br />
